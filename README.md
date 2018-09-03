@@ -1,8 +1,8 @@
-# ACCOUNT PAGE - DATA AGGREGATION LAYER
+DATA AGGREGATION LAYER
 
 ## Introduction
 
-This is a layer to aggregate data
+This is a layer to aggregate data for demo app
 
 ## Querying
 
