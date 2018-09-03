@@ -1,0 +1,19 @@
+type Query {
+  chatbot: ChatbotResp
+}
+
+type ChatbotResp {
+  name: String
+  data: ChatBot
+}
+
+type ChatBot {
+  text: String
+  video: Video
+  images: [Image]
+}
+
+type Video {
+  videoUrl: String
+  thumbnailUrl: Image
+}

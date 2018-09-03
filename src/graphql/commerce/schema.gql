@@ -1,0 +1,15 @@
+type Query {
+  commerce: CommerceResp
+}
+
+type CommerceResp {
+  name: String
+  data: Commerce
+}
+
+type Commerce {
+  id: ID!
+  text: String
+  price: String
+  images: [Image]
+}

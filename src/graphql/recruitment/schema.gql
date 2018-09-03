@@ -1,0 +1,12 @@
+type Query {
+  recruitment: RecruitmentResp
+}
+type RecruitmentResp {
+  name: String!
+  data: Recruitment
+}
+
+type Recruitment {
+  text: String!
+  imageUrl: String!
+}

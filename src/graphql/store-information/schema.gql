@@ -1,0 +1,33 @@
+type Query {
+  store_information: StoreInformationResp
+}
+
+type StoreInformationResp {
+  name: String!
+  data: StoreInformation
+}
+
+type StoreInformation {
+  introduction: String!
+  address: String!
+  direction1: String!
+  direction2: String!
+  latitude: String!
+  longtitude: String!
+  openingHour: OpeningHour
+}
+
+type OpeningHour {
+  text: String!
+  data: dayWeek
+}
+
+type dayWeek {
+  sunday: [Period]
+  saturday: [Period]
+  monday: [Period]
+  tuesday: [Period]
+  wednesday: [Period]
+  thursday: [Period]
+  friday: [Period]
+}

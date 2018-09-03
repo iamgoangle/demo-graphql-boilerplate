@@ -1,0 +1,16 @@
+type Image {
+  original: String
+  f720x360: String
+  f900x450: String
+  f1920x960: String
+}
+
+type MetaData {
+  page: Int!
+  perPage: Int!
+}
+
+type Period {
+  start: String
+  end: String
+}

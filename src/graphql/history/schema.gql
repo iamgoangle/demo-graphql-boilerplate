@@ -1,0 +1,20 @@
+type Query {
+  history: HistoryResp
+}
+
+type HistoryResp {
+  name: String!
+  meta: MetaData
+  data: History
+}
+
+type History {
+  title: String
+  historiesLists: [HistoryItem]
+}
+
+type HistoryItem {
+  id: ID!
+  text: String!
+  date: String!
+}

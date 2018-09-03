@@ -1,0 +1,25 @@
+type Query {
+  coupon: CouponResp
+}
+
+type CouponResp {
+  name: String!
+  data: Coupon
+}
+
+type Coupon {
+  meta: MetaData!
+  coupons: [CouponDatas!]
+}
+
+type CouponDatas {
+  id: ID!
+  url: String!
+  title: String!
+  imageUrl: String!
+  validDate: String!
+  startDate: String!
+  endDate: String!
+  disclosureRange: Int!
+  acceptNonFriend: Boolean!
+}

@@ -1,0 +1,21 @@
+type Query {
+  item: ItemResp
+}
+
+type ItemResp {
+  name: String!
+  meta: MetaData
+  data: Data
+}
+
+type Data {
+  title: String!
+  itemLists: [Item]
+}
+
+type Item {
+  id: ID!
+  name: String!
+  text: String!
+  imageUrl: Image
+}

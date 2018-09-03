@@ -1,0 +1,19 @@
+type Query {
+  photo: PhotoResp
+}
+
+type PhotoResp {
+  name: String!
+  meta: MetaData!
+  data: Photo
+}
+
+type Photo {
+  title: String!
+  photoLists: PhotoList
+}
+
+type PhotoList {
+  text: String
+  imageUrl: [Image]
+}

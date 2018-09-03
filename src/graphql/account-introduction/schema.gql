@@ -1,0 +1,13 @@
+type Query {
+  account_introduction: AccountResp
+}
+
+type AccountResp {
+  name: String!
+  data: Account!
+}
+
+type Account {
+  text: String!
+  imageUrl: Image!
+}

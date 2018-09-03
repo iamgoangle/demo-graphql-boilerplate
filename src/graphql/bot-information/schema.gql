@@ -1,0 +1,38 @@
+type Query {
+  bot_information: BotInformationResp
+}
+
+enum Plugins {
+  NEWHOPE
+  EMPIRE
+  JEDI
+}
+
+type BotInformationResp {
+  name: String
+  data: BotInformation
+}
+
+type BotInformation {
+  botId: ID!
+  data: BotInformationData
+}
+
+type BotInformationData {
+  mid: ID!
+  searchId: String!
+  name: String!
+  statusMessage: String!
+  imageUrl: String!
+  approvalBadge: String!
+  categoryName: String!
+  subCategoryName: String!
+  friendsCount: Int!
+  oneOnOneChat: Boolean!
+  businessHours: String!
+  messageDeliveryFrequency: String!
+  plugins: [Plugins]
+  addFriendButtonText: String!
+  coverImages: [Image]!
+  colorTheme: String!
+}
